@@ -274,3 +274,52 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+Last login: Wed Mar 15 16:14:35 on ttys001
+Ali@JARVIS Spacecraft-Dynamics-and-Control % ls
+HW		LICENSE		README.md	Slides
+Ali@JARVIS Spacecraft-Dynamics-and-Control % ls -a
+.		.DS_Store	.gitignore	LICENSE		Slides
+..		.git		HW		README.md
+Ali@JARVIS Spacecraft-Dynamics-and-Control % nano .gitignore
+Ali@JARVIS Spacecraft-Dynamics-and-Control % nano .gitignore 
+Ali@JARVIS Spacecraft-Dynamics-and-Control % vim .gitig
+Ali@JARVIS Spacecraft-Dynamics-and-Control % vim .gitignore 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.DS_Store
+.slprj
+*.slxc
+*/*/*/slprj/
+*.asv
+*.autosave
+#*.mat
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Intermediate documents:
+*.dvi
+".gitignore" 619L, 6549B                                      1,1           Top
+
