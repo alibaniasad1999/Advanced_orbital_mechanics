@@ -1,0 +1,27 @@
+\section{Question 1}
+
+Spacecraft position in ITRF coordinates is given by
+$$
+\boldsymbol{\mathrm{r}} = 
+\begin{bmatrix}
+    6789 & 6893 & 7035
+\end{bmatrix}^{\mathrm{T}}_{km}
+$$
+
+\subsection{part a}
+Find Latitude and Longitude. For this purpose used algorithm 12 of Valado's book. This algorithm is implemented in the function 'latlon.py' in the 'code/Q1' folder. The function takes the spacecraft position vector as input and returns the latitude and longitude in degrees. The iteration ended when the difference is smaller than 1e-10. The results are:
+
+\begin{table}[H]
+    \caption{Results of part a}
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Variables} & \textbf{Values} \\
+            \hline
+            Latitude & \ang{36.12} \\
+            Longitude & \ang{45.43} \\
+            $h_{ellp}$ & 5591.51$_{km}$ \\
+            \hline
+            \end{tabular}
+    \end{center}
+\end{table}

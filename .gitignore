@@ -255,7 +255,7 @@ TSWLatexianTemp*
 
 # gummi
 .*.swp
-
+.vscode
 # KBibTeX
 *~[0-9]*
 
