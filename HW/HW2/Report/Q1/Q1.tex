@@ -16,11 +16,38 @@ Find Latitude and Longitude. For this purpose used algorithm 12 of Valado's book
     \begin{center}
         \begin{tabular}{|c|c|}
             \hline
+            \Tstrut
             \textbf{Variables} & \textbf{Values} \\
             \hline
             Latitude & \ang{36.12} \\
             Longitude & \ang{45.43} \\
             $h_{ellp}$ & 5591.51$_{km}$ \\
+            \hline
+            \end{tabular}
+    \end{center}
+\end{table}
+
+\subsection{part b}
+In this part, we used the astropy package to find the position vector in the GCRF coordination system. The Python code for this can be found in the 'code/Q1' folder in the Jupyter Notebook file. Position vector in GCRF:
+$$
+\boldsymbol{\mathrm{r}} = 
+\begin{bmatrix}
+    -862.54 & -9634.75 & 7037.25
+\end{bmatrix}^{\mathrm{T}}_{km}
+$$
+
+\subsection{part c}
+In this part, we used the astropy package to find GMST($\theta_{GMST}$) and LST($\theta_{LST}$) The Python code for this can be found in the 'code/Q1' folder in the Jupyter Notebook file. The results are:
+
+\begin{table}[H]
+    \caption{Results of part c}
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            \Tstrut
+            \textbf{GMST($\theta_{GMST}$)} & \textbf{LST($\theta_{LST}$)} \\
+            \hline
+            \ang{112.78} & \ang{149.78} \\
             \hline
             \end{tabular}
     \end{center}

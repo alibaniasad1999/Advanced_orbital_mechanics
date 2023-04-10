@@ -1,0 +1,28 @@
+\section{Question 2}
+Position vector: $\vec{r}_{ECI} = -346\hat{i} + 8265\hat{j} + 4680\hat{k}$ km
+
+Velocity vector: $\vec{v}_{ECI} = -5.657\hat{i} -1.73\hat{j} + 2.703\hat{k}$ km/s
+
+To find the position and velocity in the orbital x-y plane, we need to first transform the ECI coordinates to the orbital coordinate system (i.e., the perifocal coordinate system). The transformation matrix from ECI to perifocal coordinates is given by:
+
+$[\mathbf{T}] = \begin{bmatrix} \cos\omega\cos\Omega - \sin\omega\cos i\sin\Omega & -\cos\omega\sin\Omega - \sin\omega\cos i\cos\Omega & \sin\omega\sin i \ \sin\omega\cos\Omega + \cos\omega\cos i\sin\Omega & -\sin\omega\sin\Omega + \cos\omega\cos i\cos\Omega & -\cos\omega\sin i \ \sin i\sin\Omega & \sin i\cos\Omega & \cos i \end{bmatrix}$
+
+where $\omega$, $\Omega$, and $i$ are the argument of periapsis, right ascension of the ascending node, and inclination of the orbit, respectively.
+
+Assuming that the orbit is circular ($e=0$), the argument of periapsis and the right ascension of the ascending node are not defined. Hence, we can assume that $\omega = \Omega = 0$. The transformation matrix then simplifies to:
+
+$[\mathbf{T}] = \begin{bmatrix} \cos\Omega & -\sin\Omega & 0 \ \sin\Omega & \cos\Omega & 0 \ 0 & 0 & 1 \end{bmatrix}$
+
+Using this transformation matrix, we can find the position and velocity in the perifocal coordinate system as:
+
+$\vec{r}{P} = [\mathbf{T}]\vec{r}{ECI}$
+
+$\vec{v}{P} = [\mathbf{T}]\vec{v}{ECI}$
+
+Substituting the given values, we get:
+
+$\vec{r}_{P} = \begin{bmatrix} \cos\Omega & -\sin\Omega & 0 \ \sin\Omega & \cos\Omega & 0 \ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} -346 \ 8265 \ 4680 \end{bmatrix} = \begin{bmatrix} -1254.8 \ -3121.6 \ 4680 \end{bmatrix}$ km
+
+$\vec{v}_{P} = \begin{bmatrix} \cos\Omega & -\sin\Omega & 0 \ \sin\Omega & \cos\Omega & 0 \ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} -5.657 \ -1.73 \ 2.703 \end{bmatrix} = \begin{bmatrix} -2.302 \ 4.529 \ 2.703 \end{bmatrix}$ km/s
+
+The position and velocity in the x-y plane can be obtained by setting the z-components of the position and velocity vectors to zero, i.e.,
