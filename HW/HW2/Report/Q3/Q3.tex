@@ -1,0 +1,19 @@
+\section{Question 3}
+The observation time is on August 1, 2023, at 15:00:00 UTC.
+
+\subsection{part a}
+In this to calculate Earth and Sun location used JPL Horizons On-Line Ephemeris System. The code used the "de440s" version which is the last and most accurate version of the DE series. The code used a short version because it doesn't need all the data time that was provided and the complete one has 3 gigabyte size. The code is in Q3.ipynb jupyter notebook.
+
+\subsection{part b}
+To check if the satellite has a clear view of the Sun, we need to calculate the angle between the Sun vector and the satellite vector. If the angle is less than the half-angle of the satellite's field of view (FOV), then the satellite has a clear view of the Sun. The calculation can be done as follows:
+
+Find the position vector of the Sun in the ECI coordinate system, denoted as $\vec{r}_{Sun}$. This can be obtained from an ephemeris or by using an orbital model.
+Find the position vector of the satellite in the ECI coordinate system, denoted as $\vec{r}_{sat}$.
+Find the unit vector in the direction of the Sun from the satellite, denoted as $\hat{s}$:
+$\hat{s} = \frac{\vec{r}{Sun} - \vec{r}{sat}}{|\vec{r}{Sun} - \vec{r}{sat}|}$
+Find the unit vector in the direction of the satellite from the Earth's center, denoted as $\hat{sat}$:
+$\hat{sat} = \frac{\vec{r}{sat}}{|\vec{r}{sat}|}$
+Find the angle between $\hat{s}$ and $\hat{sat}$ using the dot product:
+$\cos{\theta} = \hat{s} \cdot \hat{sat}$
+Compare the angle $\theta$ with the half-angle of the satellite's FOV, denoted as $\theta_{FOV}/2$. If $\theta \leq \theta_{FOV}/2$, then the satellite has a clear view of the Sun.
+The calculation is done using Python in Q3.ipynb jupyter notebook. The result is that satellite is in the umbra.
