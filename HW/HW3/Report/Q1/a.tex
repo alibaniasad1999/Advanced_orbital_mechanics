@@ -1,0 +1,26 @@
+\section{Question 1}
+In this equation we discuses about perturbation in classical orbital element. 
+Formulas for the Gaussian form of the VOP equations using the disturbing force with specific force components resolved in the RSW system:
+\begin{equation}
+\begin{aligned}
+\dfrac{da}{dt} = & \dfrac{2}{n\sqrt{1-e^2}} \left( e\sin(\theta) F_R + \dfrac{p}{r}F_S\right) \\
+\dfrac{de}{dt} =& \dfrac{\sqrt{1-e^2}}{na}\left(\sin(\theta)F_R+ \left(\cos(\theta) + \dfrac{e+\cos(\theta)}{1+e\cos(\theta)}\right)F_S\right) \\
+\dfrac{di}{dt} = &\dfrac{r\cos(u)}{na^2\sqrt{1-e^2}}F_W \\
+\dfrac{d\Omega}{dt} = &\dfrac{r\sin(\theta)}{na^2\sqrt{1-e^2}\sin(i)}F_W \\
+\dfrac{d\omega}{dt} =& \dfrac{\sqrt{1-e^2}}{nae}\left(-\cos(\theta)F_R + \sin(\omega)\left(1+\dfrac{1}{p}\right)F_S \right) - \dfrac{r\cot(i)\sin(u)}{h}F_W\\
+\dfrac{M_0}{dt} =& \dfrac{1}{na^2e} \left((p\cos(\theta) -2er)F_R - (p+r)\sin(\theta)F_S\right)-\dfrac{dn}{dt}(t - t_0)
+\end{aligned}
+\end{equation}
+\subsection{part a}
+
+If we want to change a, we need to have force in R or S direction. If there is a force in R and S direction other parameters like eccentricity, $\omega$, and $M_0$ will change and others will be constant. If we can solve the below equations and find the answer (if exist), we can change parameter "a" without the change of other parameters.
+
+\begin{equation}
+    \begin{aligned}
+        &\sin(\theta)F_R = - \left(\cos(\theta) + \dfrac{e+\cos(\theta)}{1+e\cos(\theta)}\right)F_S\\
+        &\cos(\theta)F_R = \sin(\omega)\left(1+\dfrac{1}{p}\right)F_S\\
+        &(p\cos(\theta) -2er)F_R = (p+r)\sin(\theta)F_S
+    \end{aligned}
+\end{equation}
+
+equations are more than unknown, so the answer might not find.
