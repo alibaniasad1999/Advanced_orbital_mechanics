@@ -370,7 +370,8 @@ coverage.xml
 # Django stuff:
 *.log
 *.pot
-
+AOM.key
+AOM.pdf
 # Sphinx documentation
 docs/_build/
 myenv/
