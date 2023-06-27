@@ -1,0 +1,22 @@
+\section{Question 3}
+\subsection{Part a}
+In this section, we will utilize Algorithm 71 from the reference book to determine the required orbital parameters for a sun-synchronous orbit. The code implementation can be found in the \texttt{Q3.ipynb} file. Since the orbit is sun-synchronous, we can directly use the algorithm without the need to calculate the inclination ($i$). After performing the necessary iterations, the obtained results are as follows:
+$$
+a = 6788.7228 \, \text{km}
+$$
+Then, we can calculate the inclination using the formula:
+$$
+i = \frac{-a^{7/2}\dot\Omega}{3J_2R_e^2\sqrt{\mu}} = 93.528 \, \text{deg}
+$$
+where $\dot\Omega$ represents the rate of change of right ascension of the ascending node, $J_2$ is the second zonal harmonic coefficient, $R_e$ is the Earth's equatorial radius, and $\mu$ is the standard gravitational parameter.
+
+\subsection{Part b}
+In this section, we will explore how different initial inclinations affect the results when designing a repeat groundtrack-sun synchronous orbit. We will calculate the semi-major axis for various initial inclinations, assuming a sun-synchronous orbit, and then employ Algorithm 71 to iterate and determine the corresponding inclination ($i$). The code implementation can be found in the \texttt{Q3.ipynb} file. 
+
+Upon examining different initial inclination values ranging from 90 to 180 degrees and performing the necessary iterations, we obtained the following results:
+$$
+a = 6788.722 \, \text{km} \quad \text{and} \quad i = 93.528 \, \text{deg}
+$$
+Interestingly, regardless of the initial inclination value used and the resulting initial semi-major axis, the final outcome remained the same.
+
+Note: For a more detailed analysis and complete code implementation, please refer to the provided \texttt{Q3.ipynb} file.
